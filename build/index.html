@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="shortcut icon" href="images/content/header/logo.png" type="images/content/header/logo.png">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a class="header__logo logo" href="#">
+          <svg viewBox="0 0 15.28 15.281">
+            <use xlink:href="images/sprite.svg#logo"></use>
+          </svg>
+          <span class="sr-only">Logotype</span>
+        </a>
+        <nav class="menu">
+          <ul class="menu__items">
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Home
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Shop
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Gallery
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <div class="header-actions__btns">
+            <button class="header-actions__btn" type="button">
+              <svg viewBox="0 0 15.28 15.281" width="23" height="23">
+                <use xlink:href="images/sprite.svg#search"></use>
+              </svg>
+              <span class="sr-only">search</span>
+              <!-- <span class="header-actions__search">Search</span> -->
+            </button>
+            <button class="header-actions__btn" type="button">
+              <svg viewBox="0 0 15.28 15.281" width="27" height="27">
+                <use xlink:href="images/sprite.svg#cart"></use>
+              </svg>
+              <span class="sr-only">cart</span>
+              <span class="header-actions__count">2</span>
+            </button>
+          </div>
+        </div>
+        <button class="header__burger" type="button">
+          <span></span>
+          <span class="sr-only">burger menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div class="header-info ibg" style="background-image: url(images/content/header/bg.png);">
+    <div class="container">
+      <div class="header-info__inner">
+        <div class="header-info__box">
+          <h1 class="header-info__title title">
+            Plant Lovers
+          </h1>
+          <div class="header-info__subtitle">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna
+              aliqua.
+            </p>
+          </div>
+          <a class="header-info__btn button" href="#">
+            View now
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="shop">
+    <div class="container">
+      <h2 class="shop__title title">
+        Shop
+      </h2>
+      <ul class="shop__items">
+        <li class="shop__item">
+          <a class="shop__product" href="#">
+            <div class="shop__wrapper ibg" style="background-image: url(images/content/shop/1.png);">
+              <div class="shop__subtitle">
+                Go green
+                Home plants
+              </div>
+              <div class="shop__lable">
+                See whole collection
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="shop__item">
+          <a class="shop__product" href="#">
+            <div class="shop__wrapper ibg" style="background-image: url(images/content/shop/2.png);">
+              <div class="shop__subtitle">
+                Go green
+                Home plants
+              </div>
+              <div class="shop__lable">
+                See whole collection
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="shop__item">
+          <a class="shop__product" href="#">
+            <div class="shop__wrapper ibg" style="background-image: url(images/content/shop/3.png);">
+              <div class="shop__subtitle">
+                Go green
+                Home plants
+              </div>
+              <div class="shop__lable">
+                See whole collection
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <div class="shop-galery">
+        <ul class="shop-galery__items">
+          <li class="shop-galery__btn">
+            <button class="shop-galery__button" type="button" data-filter="all">
+              All
+            </button>
+          </li>
+          <li class="shop-galery__btn">
+            <button class="shop-galery__button" type="button" data-filter=".organic">
+              Organic
+            </button>
+          </li>
+          <li class="shop-galery__btn">
+            <button class="shop-galery__button" type="button" data-filter=".succulents">
+              Succulents
+            </button>
+          </li>
+          <li class="shop-galery__btn">
+            <button class="shop-galery__button" type="button" data-filter=".decoration">
+              Decoration
+            </button>
+          </li>
+        </ul>
+        <ul class="shop-galery__list">
+          <li class="shop-galery__item mix decoration">
+            <a class="shop-galery__link" href="#">
+              <img class="shop-galery__img" src="images/content/shop/flower 1.png" alt="product">
+              <div class="shop-galery__name">
+                Tulips
+              </div>
+              <div class="shop-galery__wrapper">
+                <div class="shop-galery__subname">
+                  Decoration
+                </div>
+                <div class="shop-galery__price">
+                  5,00$
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="shop-galery__item mix organic">
+            <a class="shop-galery__link" href="#">
+              <img class="shop-galery__img" src="images/content/shop/flower 2.png" alt="product">
+              <div class="shop-galery__name">
+                Cactus
+              </div>
+              <div class="shop-galery__wrapper">
+                <div class="shop-galery__subname">
+                  Organic
+                </div>
+                <div class="shop-galery__price">
+                  10,00$
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="shop-galery__item mix organic">
+            <a class="shop-galery__link" href="#">
+              <img class="shop-galery__img" src="images/content/shop/flower 3.png" alt="product">
+              <div class="shop-galery__name">
+                Ficus
+              </div>
+              <div class="shop-galery__wrapper">
+                <div class="shop-galery__subname">
+                  Organic
+                </div>
+                <div class="shop-galery__price">
+                  20,00$
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="shop-galery__item mix decoration">
+            <a class="shop-galery__link" href="#">
+              <img class="shop-galery__img" src="images/content/shop/flower 4.png" alt="product">
+              <div class="shop-galery__name">
+                Irys
+              </div>
+              <div class="shop-galery__wrapper">
+                <div class="shop-galery__subname">
+                  Decoration
+                </div>
+                <div class="shop-galery__price">
+                  8,00$
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="shop-galery__item mix organic">
+            <a class="shop-galery__link" href="#">
+              <img class="shop-galery__img" src="images/content/shop/flower 5.png" alt="product">
+              <div class="shop-galery__name">
+                Fiddle Fig
+              </div>
+              <div class="shop-galery__wrapper">
+                <div class="shop-galery__subname">
+                  organic
+                </div>
+                <div class="shop-galery__price">
+                  13,00$
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="shop-galery__item mix succulents">
+            <a class="shop-galery__link" href="#">
+              <img class="shop-galery__img" src="images/content/shop/flower 6.png" alt="product">
+              <div class="shop-galery__name">
+                Succulent
+              </div>
+              <div class="shop-galery__wrapper">
+                <div class="shop-galery__subname">
+                  Succulents
+                </div>
+                <div class="shop-galery__price">
+                  10,00$
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="shop-galery__item mix organic">
+            <a class="shop-galery__link" href="#">
+              <img class="shop-galery__img" src="images/content/shop/flower 7.png" alt="product">
+              <div class="shop-galery__name">
+                Orchid
+              </div>
+              <div class="shop-galery__wrapper">
+                <div class="shop-galery__subname">
+                  Organic
+                </div>
+                <div class="shop-galery__price">
+                  21,00$
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="shop-galery__item mix decoration">
+            <a class="shop-galery__link" href="#">
+              <img class="shop-galery__img" src="images/content/shop/flower 8.png" alt="product">
+              <div class="shop-galery__name">
+                Pion
+              </div>
+              <div class="shop-galery__wrapper">
+                <div class="shop-galery__subname">
+                  Decoration
+                </div>
+                <div class="shop-galery__price">
+                  10,00$
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="gallery">
+    <div class="container">
+      <h2 class="gallery__title title">
+        Gallery
+      </h2>
+      <ul class="gallery__items">
+        <li class="gallery__item">
+          <a class="gallery__link" href="images/content/gallery/1.png" data-fancybox="gallery">
+            <img class="gallery__img" src="images/content/gallery/1.png" alt="image">
+          </a>
+        </li>
+        <li class="gallery__item">
+          <a class="gallery__link" href="images/content/gallery/2.png" data-fancybox="gallery">
+            <img class="gallery__img" src="images/content/gallery/2.png" alt="image">
+          </a>
+        </li>
+        <li class="gallery__item">
+          <a class="gallery__link" href="images/content/gallery/3.png" data-fancybox="gallery">
+            <img class="gallery__img" src="images/content/gallery/3.png" alt="image">
+          </a>
+        </li>
+        <li class="gallery__item">
+          <a class="gallery__link" href="images/content/gallery/4.png" data-fancybox="gallery">
+            <img class="gallery__img" src="images/content/gallery/4.png" alt="image">
+          </a>
+        </li>
+        <li class="gallery__item">
+          <a class="gallery__link" href="images/content/gallery/5.png" data-fancybox="gallery">
+            <img class="gallery__img" src="images/content/gallery/5.png" alt="image">
+          </a>
+        </li>
+        <li class="gallery__item">
+          <a class="gallery__link" href="images/content/gallery/6.png" data-fancybox="gallery">
+            <img class="gallery__img" src="images/content/gallery/6.png" alt="image">
+          </a>
+        </li>
+      </ul>
+      <div class="gallery__wrapper">
+        <a class="gallery__button button" href="#">
+          See more
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="contact ibg" style="background-image: url(images/content/contact/bg.png);">
+    <div class="container">
+      <h2 class="contact__title title">
+        Contact
+      </h2>
+      <div class="contact__inner">
+        <div class="contact__wrapper">
+          <form class="contact-form" action="#">
+            <div class="contact-form__title title">
+              Join our newsletter
+            </div>
+            <input class="contact-form__email" type="email" id="email" name="email" placeholder="E-mail">
+            <label class="sr-only" for="email">your email</label>
+            <button class="contact-form__button button" type="submit">Send</button>
+          </form>
+          <div class="contact__info">
+            <a class="contact__number" href="tel:+442077273567">
+              +44-20-77-27-35-67
+            </a>
+            <a class="contact__address" href="https://goo.gl/maps/wZUK2kmi3xFj282J7" target="_blank">
+              60 Holland Park, London W11 3SJ
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <a class="footer__logo logo" href="#">
+          <svg viewBox="0 0 15.28 15.281" width="120" height="120" fill="#ffffff">
+            <use xlink:href="images/sprite.svg#logo-f"></use>
+          </svg>
+          <span class="sr-only">Logotype</span>
+        </a>
+        <nav class="menu footer-menu">
+          <ul class="menu__items footer-menu__items">
+            <li class="menu__item footer-menu__item">
+              <a class="menu__link footer-menu__link" href="#">
+                Home
+              </a>
+            </li>
+            <li class="menu__item footer-menu__item">
+              <a class="menu__link footer-menu__link" href="#">
+                Shop
+              </a>
+            </li>
+            <li class="menu__item footer-menu__item">
+              <a class="menu__link footer-menu__link" href="#">
+                Gallery
+              </a>
+            </li>
+            <li class="menu__item footer-menu__item">
+              <a class="menu__link footer-menu__link" href="#">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="footer__social">
+          <li class="footer__item">
+            <a class="footer__instagram" href="#">
+              <svg viewBox="0 0 15.28 15.281" width="25" height="25">
+                <use xlink:href="images/sprite.svg#instagram"></use>
+              </svg>
+              <span class="sr-only">Logotype</span>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__facebook" href="#">
+              <svg viewBox="0 0 15.28 15.281" width="25" height="25">
+                <use xlink:href="images/sprite.svg#facebook"></use>
+              </svg>
+              <span class="sr-only">Logotype</span>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__twitter" href="#">
+              <svg viewBox="0 0 15.28 15.281" width="25" height="25">
+                <use xlink:href="images/sprite.svg#twitter"></use>
+              </svg>
+              <span class="sr-only">Logotype</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <a class="footer__desc" target="_blank" href="https://www.instagram.com/__.zadorozhna.___/">
+        Design by Veka
+      </a>
+    </div>
+  </footer>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
