@@ -1,0 +1,216 @@
+.shop {
+  padding: 100px 0 0 0;
+
+  @include r (768) {
+    padding: 75px 0 0 0;
+  }
+
+  &__title {
+    margin-bottom: 55px;
+
+    &::after {
+      left: 102px;
+
+      @include r(414) {
+        left: 110px;
+      }
+    }
+  }
+
+  &__items {
+    display: flex;
+    justify-content: center;
+
+    @include r(1200) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item {
+    max-width: 370px;
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+
+      @include r(1200) {
+        margin-bottom: 30px;
+        margin-right: 0;
+      }
+    }
+
+    &:first-child {
+      @include r(1200) {
+        margin-right: 30px;
+      }
+
+      @include r(768) {
+        margin-right: 0;
+      }
+    }
+
+    @include r(768) {
+      max-width: 500px;
+      width: 100%;
+    }
+  }
+
+  &__product {
+    display: block;
+    transition: opacity 0.5s;
+
+    &:hover,
+    &:active,
+    &:focus {
+      opacity: 0.9;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 245px;
+    padding: 30px 30px 75px 25px;
+    transition: opacity 0.5s;
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+  }
+
+  &__subtitle {
+    font-size: 20px;
+    color: #ffffff;
+    @include opensans (700);
+    max-width: 130px;
+    margin-bottom: 15px;
+
+  }
+
+  &__lable {
+    font-size: 12px;
+    padding: 5px 8px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    max-width: 135px;
+    background-color: rgba(0, 0, 0, 0.38);
+    @include opensans(300);
+    transition: color 0.5s, border-color 0.5s, background-color 0.5s;
+
+    &:hover,
+    &:active,
+    &:focus {
+      border-color: $default;
+      background-color: rgba(243, 243, 243, 0.86);
+      color: $default;
+    }
+  }
+}
+
+.shop-galery {
+  padding: 80px 0 0 0;
+
+  @include r(768) {
+    padding: 75px 0 0 0;
+  }
+
+  @include r(414) {
+    padding: 50px 0 0 0;
+  }
+
+  &__items {
+    display: flex;
+    margin-bottom: 55px;
+
+    @include r(1200) {
+      justify-content: center;
+      overflow: auto;
+    }
+  }
+
+  &__btn {
+
+    &:not(:last-child) {
+      margin-right: 20px;
+
+      @include r(414) {
+        margin-right: 5px;
+      }
+    }
+
+    @include r(414) {
+      font-size: 14px;
+    }
+  }
+
+  &__button {
+    border: none;
+    background-color: inherit;
+    @include opensans(600);
+    color: $default;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+
+    &:hover,
+    &:active,
+    &:focus {
+      border-bottom: 1px solid $default;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 270px);
+    grid-template-rows: repeat(auto-fill, 400px);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    justify-content: center;
+  }
+
+  &__item {
+    max-width: 270px;
+  }
+
+  &__link {
+    display: block;
+    box-shadow: 0 0 15px 0px rgba(221, 221, 221, 1);
+    transition: box-shadow 0.3s;
+
+    &:hover,
+    &:active,
+    &:focus {
+      box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+    }
+  }
+
+  &__img {
+    max-width: 270px;
+    height: 326px;
+    margin-bottom: 10px;
+  }
+
+  &__wrapper {
+    display: flex;
+    padding: 0 10px 10px;
+  }
+
+  &__name {
+    margin-bottom: 20px;
+    @include opensans(600);
+    padding: 0 10px;
+  }
+
+  &__subname {
+    margin-right: auto;
+    @include montserrat(300);
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+
+  &__price {
+    @include montserrat(300);
+    font-size: 14px;
+  }
+}
+
+.mixitup-control-active {
+  border-bottom: 1px solid $default;
+}
